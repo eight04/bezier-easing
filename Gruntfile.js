@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		replace: {
-			build: {
+			main: {
 				options: {
 					patterns: [
 						{
@@ -27,6 +27,19 @@ module.exports = function(grunt) {
 				},
 				files: {
 					"bezier-easing.user.js": "bezier-easing.src.js"
+				}
+			},
+			readme: {
+				options: {
+					patterns: [
+						{
+							match: "LICENSE",
+							replacement: "<%= grunt.file.read('LICENSE') %>"
+						}
+					]
+				},
+				files: {
+					"README.md": "README.src.md"
 				}
 			}
 		}

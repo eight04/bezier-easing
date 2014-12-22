@@ -1,7 +1,8 @@
 // ==UserScript==
-// @name         bezier-easing
-// @version      0.4.4
-// @description  Bezier Curve based easing functions for Javascript animations
+// @name        bezier-easing
+// @version     0.4.4
+// @description Bezier Curve based easing functions for Javascript animations
+// @license		MIT (https://github.com/gre/bezier-easing/blob/master/LICENSE)
 // ==/UserScript==
 
 /**
@@ -160,3 +161,4 @@
   return BezierEasing;
 
 }));
+
